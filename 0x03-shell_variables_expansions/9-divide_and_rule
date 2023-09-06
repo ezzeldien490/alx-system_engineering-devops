@@ -1,2 +1,2 @@
 #!/bin/bash
-echo  "$(($PWOER/$DIVIDE))"
+echo  "$(($PWOER / $DIVIDE))"
