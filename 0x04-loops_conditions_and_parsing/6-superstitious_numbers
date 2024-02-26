@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# This script use if condint in while loop.
+
+x=1
+while [ $x -le 20 ]
+do
+	if [ $x -eq 4 ];
+	then
+		echo -e "$x\nbad luck from China"
+	elif [ $x -eq 9 ];
+	then
+		echo -e "$x\nbad luck from Japan"
+	elif [ $x -eq 17 ];
+	then
+		echo -e "$x\nBad luck from Italy"
+	else
+		echo "$x"
+	fi
+	x=$(( x +1 ))
+done
