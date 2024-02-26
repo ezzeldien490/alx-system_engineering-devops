@@ -4,17 +4,19 @@
 x=1
 while [ $x -le 20 ]
 do
-	if [ $x -eq 4 ];
-	then
-		echo -e "$x\nbad luck from China"
-	elif [ $x -eq 9 ];
-	then
-		echo -e "$x\nbad luck from Japan"
-	elif [ $x -eq 17 ];
-	then
-		echo -e "$x\nBad luck from Italy"
-	else
-		echo "$x"
-	fi
+	case $x in
+		4)
+			echo -e "$x\nbad luck from China"
+			;;
+		9)	
+			echo -e "$x\nbad luck from Japan"
+			;;
+		17)
+			echo -e "$x\nBad luck from Italy"
+			;;
+		*)
+			echo "$x"
+			;;
+	esac
 	x=$(( x +1 ))
 done
