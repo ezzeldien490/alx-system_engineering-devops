@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This script use if condint in while loop.
+
+x=1
+while [ $x -le 10 ]
+do
+	if [ $x -eq 4 ];
+	then
+		echo  "bad luck"
+	elif [ $x -eq 8 ];
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	x=$(( x +1 ))
+done
