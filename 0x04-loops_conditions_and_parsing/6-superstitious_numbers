@@ -12,7 +12,7 @@ do
 			echo -e "$x\nbad luck from Japan"
 			;;
 		17)
-			echo -e "$x\nBad luck from Italy"
+			echo -e "$x\nbad luck from Italy"
 			;;
 		*)
 			echo "$x"
