@@ -2,4 +2,4 @@
 # Bash script that display PID and other information.
 
 
-ps axo user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,comm --forest
+ps -auxf
